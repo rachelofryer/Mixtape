@@ -9,6 +9,7 @@
     <title>mixtape</title>
 
     <style>
+
         a{
           color: #ba0000;
         }
@@ -43,6 +44,25 @@
           color: #aaacad;
           font-family: verdana, sans-serif;
         }
+        #more{
+          display: none;
+        }
+        .btn {
+          background-color: #ba0000;
+          border: none;
+          color: white;
+          padding: 8px 14px;
+          font-family: verdana, sans-serif;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          opacity: 0.4;
+          transition: 0.9s;
+          border-radius: 12px;
+        }
+
+        .btn:hover {opacity: 1}
+
     </style>
     <link rel="icon" type="image/png" href="favicon.png" sizes="16x16" />
   </head>
@@ -77,7 +97,7 @@ Deep down though, I wanna know about what the fuck you been up to (You been up t
 Old him could have seen that coming<br />
 Fuck you I don't need nothing from ya<br />
 I was doing pretty good without you<br />
-But something tells me that a relapse coming (That a relapse coming)<br />
+But something tells me that a relapse coming (That a relapse coming)<span id="dots">...</span><span id="more"><br />
 But something tells me that a relapse coming (That a relapse coming, that a relapse coming)<br />
 But something tells me that a relapse coming (That a relapse coming, that a relapse coming, relapse)<br />
 But something tells me that a relapse coming (That a relapse coming)<br />
@@ -130,7 +150,10 @@ I was doing pretty good without you<br />
 But something tells me that a relapse coming (It's coming in)<br />
 But something tells me that a relapse coming (That a, that a, that a, that a)<br />
 But something tells me that a relapse coming (That a relapse, that a relapse)<br />
-But something tells me that a relapse coming (That a relapse coming, that a relapse coming)</p>
+But something tells me that a relapse coming (That a relapse coming, that a relapse coming)</span></p>
+
+<button onclick="myFunction()" class="btn" id="myBtn">Read more</button>
+
 <p><a href="#top">Back To Top</a></p>
 
     <iframe src="https://open.spotify.com/embed/track/3wwo0bJvDSorOpNfzEkfXx" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -182,6 +205,7 @@ Just feel the vibes, just- just feel the vibes<br />
 I wonder why, I- I wonder why, yeah<br />
 Just feel the vibes, just- just feel the vibes<br />
 Just feel the vibes, just- just feel the vibes</p>
+
 <p><a href="#top">Back To Top</a></p>
 
     <iframe src="https://open.spotify.com/embed/track/7AvprzMsRJpybaalckaT8c" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -623,5 +647,22 @@ I made a promise, I'm never gon' change<br />
 Rolls-Royce umbrella, I'm hopin' it rain, yeah</p>
 <p><a href="#top">Back To Top</a></p>
 
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
   </body>
 </html>
