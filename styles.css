@@ -1,7 +1,56 @@
 <style>
-    html{
-      scroll-behavior: smooth;
+
+    p, h1, h2 {
+
+    border: purple 3px solid;
+
     }
+
+
+    a{
+
+    border: red 2px solid;
+
+    }
+
+    ol{
+
+    padding: 2%;
+
+    margin: auto;
+
+    border: white 1px solid;
+
+    width: 80%;
+
+    }
+
+
+    li{
+
+    border-bottom: white 2px solid;
+
+    padding: 5px;
+
+    width: 90%;
+
+    margin: auto;
+
+    }
+
+
+    img{
+
+    border: lightpink 2px solid;
+
+    background: white;
+
+    margin: 10px auto;
+
+    padding: 2%;
+
+    }
+
 
     a{
       color: #ba0000;
