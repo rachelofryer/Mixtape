@@ -1,0 +1,61 @@
+<style>
+    html{
+      scroll-behavior: smooth;
+    }
+
+    a{
+      color: #ba0000;
+    }
+
+    body{
+        background-color: #282c32;
+    }
+
+    img{
+        width:100%;
+    }
+    #header{
+        text-align: center;
+        font-size: 50pt;
+        color: #ba0000;
+        font-family: Barrio, sans-serif;
+    }
+    h2{
+      text-align: center;
+      color: #7a7e80;
+      font-family: Averia Sans Libre, sans-serif;
+    }
+    ol{
+      color: #aaacad;
+      font-family: verdana, sans-serif;
+    }
+    h3{
+      color: #ba0000;
+      font-family: Averia Sans Libre, sans-serif;
+    }
+    p{
+      color: #aaacad;
+      font-family: verdana, sans-serif;
+    }
+    #more{
+      display: none;
+    }
+    .btn {
+      background-color: #ba0000;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      font-family: verdana, sans-serif;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.4;
+      transition: 0.9s;
+      border-radius: 12px;
+    }
+
+    .btn:hover {
+        opacity: 1
+    }
+
+</style>
